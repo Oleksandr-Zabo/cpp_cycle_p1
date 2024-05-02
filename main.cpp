@@ -12,21 +12,10 @@ int main()
 	cin >> vertical_horisontal;
 	cout << "Enter char: ";
 	cin >> char_in;
-	switch (vertical_horisontal)
-	{
-	case 0: {
-		while (i < lenth) {
-			cout << char_in;
-			i++;
-		}
-	}
 
-	case 1: {
-		while (i < lenth) {
-			cout << char_in << endl;
-			i++;
-		}
-	}
+	while (i < lenth) {
+		(vertical_horisontal == 0) ? cout << char_in << endl: cout << char_in;
+		i++;
 	}
 
 	cout<< endl;
